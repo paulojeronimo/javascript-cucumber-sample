@@ -1,0 +1,7 @@
+yarn run v1.22.4
+$ cucumber-js
+...
+
+1 scenario (1 passed)
+3 steps (3 passed)
+0m00.006s (executing steps: 0m00.001s

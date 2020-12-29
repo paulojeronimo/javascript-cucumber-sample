@@ -1,0 +1,21 @@
+yarn run v1.22.4
+$ cucumber-js
+.....F
+
+Failures:
+
+1) Scenario: Friday is Friday # features/is_it_friday_yet.feature:9
+   ✔ Given today is Friday # features/step_definitions/steps.js:10
+   ✔ When I ask whether it's Friday yet # features/step_definitions/steps.js:14
+   ✖ Then I should be told "TGIF" # features/step_definitions/steps.js:18
+       AssertionError [ERR_ASSERTION]: 'Nope' == 'TGIF'
+           + expected - actual
+
+           -Nope
+           +TGIF
+
+           at World.<anonymous> (/Users/pj/labs/bdd-tutorial/javascript-cucumber-sample/tutorial/features/step_definitions/steps.js:19:9)
+
+2 scenarios (1 failed, 1 passed)
+6 steps (1 failed, 5 passed)
+0m00.010s (executing steps: 0m00.002s)

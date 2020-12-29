@@ -1,0 +1,13 @@
+diff --git a/package.json b/package.json
+index 2d48be4..fb4c141 100644
+--- a/package.json
++++ b/package.json
+@@ -5,5 +5,8 @@
+   "license": "MIT",
+   "devDependencies": {
+     "@cucumber/cucumber": "^7.0.0"
++  },
++  "scripts": {
++       "test": "cucumber-js"
+   }
+ }

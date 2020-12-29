@@ -1,0 +1,16 @@
+yarn run v1.22.4
+$ cucumber-js
+..F
+
+Failures:
+
+1) Scenario: Sunday isn't Friday # features/is_it_friday_yet.feature:4
+   ✔ Given today is Sunday # features/step_definitions/steps.js:8
+   ✔ When I ask whether it's Friday yet # features/step_definitions/steps.js:12
+   ✖ Then I should be told "Nope" # features/step_definitions/steps.js:16
+       AssertionError [ERR_ASSERTION]: undefined == 'Nope'
+           at World.<anonymous> (/Users/pj/labs/bdd-tutorial/javascript-cucumber-sample/tutorial/features/step_definitions/steps.js:17:9)
+
+1 scenario (1 failed)
+3 steps (1 failed, 2 passed)
+0m00.009s (executing steps: 0m00.002s)

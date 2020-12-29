@@ -1,0 +1,36 @@
+diff --git a/features/step_definitions/steps.js b/features/step_definitions/steps.js
+index ad0dd63..7546f28 100644
+--- a/features/step_definitions/steps.js
++++ b/features/step_definitions/steps.js
+@@ -1,16 +1,18 @@
+-const { Given, When, Then } = require('@cucumber/cucumber');
++const { Given, When, Then } = require('@cucumber/cucumber')
++const assert = require('assert')
+ 
+-Given('today is Sunday', function () {
+-  // Write code here that turns the phrase above into concrete actions
+-  return 'pending';
+-});
++const isItFriday = today => {
++  // We'll leave the implementation blank for now
++}
+ 
+-When('I ask whether it\'s Friday yet', function () {
+-  // Write code here that turns the phrase above into concrete actions
+-  return 'pending';
+-});
++Given('today is Sunday', () => {
++	this.today = 'Sunday'
++})
+ 
+-Then('I should be told {string}', function (string) {
+-  // Write code here that turns the phrase above into concrete actions
+-  return 'pending';
+-});
++When('I ask whether it\'s Friday yet', _ => {
++	this.actualAnswer = isItFriday(this.today)
++})
++
++Then('I should be told {string}', expectedAnswer => {
++	assert.equal(this.actualAnswer, expectedAnswer)
++})

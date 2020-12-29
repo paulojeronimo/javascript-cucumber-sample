@@ -1,0 +1,15 @@
+diff --git a/features/step_definitions/steps.js b/features/step_definitions/steps.js
+index f64360e..0054da2 100644
+--- a/features/step_definitions/steps.js
++++ b/features/step_definitions/steps.js
+@@ -7,6 +7,10 @@ Given('today is Sunday', () => {
+ 	this.today = 'Sunday'
+ })
+ 
++Given('today is Friday', () => {
++	this.today = 'Friday'
++})
++
+ When('I ask whether it\'s Friday yet', () => {
+ 	this.actualAnswer = isItFriday(this.today)
+ })

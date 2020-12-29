@@ -1,0 +1,15 @@
+yarn run v1.22.4
+$ cucumber-js
+P--
+
+Warnings:
+
+1) Scenario: Sunday isn't Friday # features/is_it_friday_yet.feature:4
+   ? Given today is Sunday # features/step_definitions/steps.js:3
+       Pending
+   - When I ask whether it's Friday yet # features/step_definitions/steps.js:8
+   - Then I should be told "Nope" # features/step_definitions/steps.js:13
+
+1 scenario (1 pending)
+3 steps (1 pending, 2 skipped)
+0m00.007s (executing steps: 0m00.001s)

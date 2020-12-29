@@ -1,0 +1,13 @@
+diff --git a/features/step_definitions/steps.js b/features/step_definitions/steps.js
+index 0054da2..5392532 100644
+--- a/features/step_definitions/steps.js
++++ b/features/step_definitions/steps.js
+@@ -1,7 +1,7 @@
+ const { Given, When, Then } = require('@cucumber/cucumber')
+ const assert = require('assert')
+ 
+-const isItFriday = today => 'Nope'
++const isItFriday = today => today === 'Friday' ? 'TGIF' : 'Nope'
+ 
+ Given('today is Sunday', () => {
+ 	this.today = 'Sunday'
